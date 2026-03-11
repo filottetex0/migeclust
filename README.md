@@ -58,22 +58,22 @@ cd migeclust
 pip install .
 ```
 4) Clone and install helper libraries
-   
-
-
-install libraries 
-
-cd /path/to/repo/banchmarks/libs 
-
-git clone git@github.com:simonetome/pyampute.git
+```
+cd benchmarks
+mkdir -P libs
+cd libs
+git clone https://github.com/filottetex0/pyampute
+git clone -b add_random_state https://github.com/filottetex0/kpod
 pip install pyampute/.
+pip install kpod/.
+cd ..
+```
+5) Install benchmark utils:
+In benchmarks folder
+```
+pip install .
+```
 
-
-git clone -b add_random_state git@github.com:simonetome/kPOD.git
-pip install kPOD/.
-
-cd to benchmarks folder and 
-pip install -e .
 
 
 
