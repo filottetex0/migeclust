@@ -7,7 +7,7 @@ In `/benchmarks/` folder --> Code for paper results replication
 We suggest to use a Conda environment:
 Look <a href="https://www.anaconda.com/download" target="__blank">here</a> for a tutorial on how to install Conda/Miniconda. 
 
-## Conda environment 
+## 1: Prepare Conda environment 
 
 Use the following command to create the `migeclust` conda env. 
 **N.B.:** in Windows, after installing conda/miniconda, you should use the "Anaconda prompt" to run the following commands.
@@ -27,7 +27,7 @@ conda create -n migeclust -c conda-forge \
 conda activate migeclust
 pip install miceforest gower ucimlrepo scikit-posthocs
 ```
-## Installing MixtureMissing for R 
+### Installing MixtureMissing for R 
 <ins>This installation could be problematic, do it for paper results replication only.</ins>
 ```
 conda activate migeclust
@@ -37,7 +37,7 @@ install.packages("MixtureMissing")
 ```
 
 
-## Install MIGEClust 
+## 2: Install MIGEClust 
 These steps assume you are working using a Unix-like terminal.
 Steps 4-5 are useful if you want to replicate the code of the paper. 
 1) Activate conda env:
@@ -74,8 +74,11 @@ In benchmarks folder
 pip install .
 ```
 
+## 3: Replicate paper analyses
 
+To replicate analyses run the scripts in `benchmarks/scripts/` folder sequentially (ascending order by number), then run the analyses in the `benchmarks/notebooks/` folder.
 
+__N.B.:__ we uploaded the used data in `benchmarks/data/`, both the raw, the synthetically amputed, and the multiple imputed one. Therefore, one could start directly from `scripts/3_run_simulation.py`.
 
 
 
