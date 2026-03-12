@@ -2,7 +2,6 @@
 """
 Created on Fri May 16 09:48:52 2025
 
-@author: Simone Tomè
 """
 import pandas as pd
 import numpy as np
