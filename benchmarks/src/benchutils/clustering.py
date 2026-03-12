@@ -2,7 +2,6 @@
 """
 Created on Tue May 20 15:58:29 2025
 
-@author: simon
 
 functions to calculate clustering assignments
 
